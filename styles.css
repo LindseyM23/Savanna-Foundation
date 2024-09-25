@@ -1,0 +1,70 @@
+/* navbar */
+.custom-navbar {
+    background-color: #D97E30; 
+    padding-bottom: 0 !important; 
+    position: sticky;
+}
+
+header.py-3.mb-4.border-bottom {
+    padding-top: 30px;
+    background-color:#D97E30 ;
+    
+}
+.header-title{
+    color: white;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #6a6968 !important; 
+}
+
+/*  */
+
+
+/* foooter */
+.custom-footer{
+    background-color: #D97E30;
+    color: white;
+    width: auto;
+}
+.sub-btn{
+    color: white;
+    background-color: #1681c7;
+    border: none;
+    border-radius: 4px;
+}
+/*  */
+
+
+/* hero */
+.hero-section{
+    margin-top: -30px;
+    background-image: url('./images/sand2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-attachment: fixed;
+}
+.hero-section > * {
+    position: relative; /* Ensure any content is above the blurred background */
+    z-index: 2; /* Place the content above the pseudo-element */
+}
+
+.hero-content{
+ display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+  gap: 2em;
+}
+.hero-image{
+background-color: #1A83C8 ;
+padding: 60px;
+
+    height: auto;
+    max-height: 100vh;
+}
+.hero-text{
+    text-align: left;
+}
+/* x */
