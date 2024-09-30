@@ -36,39 +36,41 @@
   <section id="program-details" class="program-details-section">
     <h2>Program: <span id="program-title"></span></h2>
     <div class="program-content">
-      <img id="program-image" src="" alt="Program Image">
+      <div class="program-image-container">
+        <img id="program-image" src="" alt="Program Image">
+      </div>
       <div class="program-info">
         <p id="program-description"></p>
         <p><strong>Number of Children Helped:</strong> <span id="children-helped">0</span></p>
         <p><strong>Program Goals:</strong> <span id="program-goals"></span></p>
+        <a href="#donate" class="cta-btn">Donate Now</a>
       </div>
     </div>
+  </section>
 
-    <!-- Donation Portal -->
-    <section id="donate" class="donation-portal">
-      <h2>Donate to Support <span id="program-donate-title"></span></h2>
-      <form action="https://www.payfast.co.za/eng/process" method="POST">
-        <!-- PayFast form fields -->
-        <input type="hidden" name="merchant_id" value="YOUR_MERCHANT_ID">
-        <input type="hidden" name="merchant_key" value="YOUR_MERCHANT_KEY">
-        <input type="hidden" name="return_url" value="https://your-website.com/thank-you">
-        <input type="hidden" name="cancel_url" value="https://your-website.com/cancel">
-        <input type="hidden" name="notify_url" value="https://your-website.com/payfast-notify">
+  <!-- Donation Portal -->
+  <section id="donate" class="donation-portal">
+    <h2>Support the <span id="program-donate-title"></span></h2>
+    <form action="https://www.payfast.co.za/eng/process" method="POST">
+      <input type="hidden" name="merchant_id" value="YOUR_MERCHANT_ID">
+      <input type="hidden" name="merchant_key" value="YOUR_MERCHANT_KEY">
+      <input type="hidden" name="return_url" value="https://your-website.com/thank-you">
+      <input type="hidden" name="cancel_url" value="https://your-website.com/cancel">
+      <input type="hidden" name="notify_url" value="https://your-website.com/payfast-notify">
 
-        <label for="donation-amount">Select Donation Amount:</label>
-        <select name="amount" id="donation-amount">
-          <option value="50">$50</option>
-          <option value="100">$100</option>
-          <option value="250">$200</option>
-          <option value="custom">Custom Amount</option>
-        </select>
+      <label for="donation-amount">Select Donation Amount:</label>
+      <select name="amount" id="donation-amount">
+        <option value="50">$50</option>
+        <option value="100">$100</option>
+        <option value="250">$250</option>
+        <option value="custom">Custom Amount</option>
+      </select>
 
-        <label for="custom-amount" class="custom-amount-field" style="display:none;">Enter Custom Amount:</label>
-        <input type="number" id="custom-amount" name="custom_amount" style="display:none;">
+      <label for="custom-amount" class="custom-amount-field" style="display:none;">Enter Custom Amount:</label>
+      <input type="number" id="custom-amount" name="custom_amount" style="display:none;">
 
-        <button type="submit" class="cta-btn">Donate Now</button>
-      </form>
-    </section>
+      <button type="submit" class="cta-btn">Donate Now</button>
+    </form>
   </section>
 
   <!-- Footer -->
@@ -87,8 +89,8 @@
     // Counter function for the number of children helped
     function animateCounter(element, target) {
       let count = 0;
-      const speed = 50; // Adjust speed as needed
-      const increment = Math.ceil(target / 100); // Adjust increment based on the target number
+      const speed = 50;
+      const increment = Math.ceil(target / 100);
 
       const updateCounter = () => {
         count += increment;
@@ -103,7 +105,7 @@
       updateCounter();
     }
 
-    // Function to load program details and start the counter animation
+    // Function to load program details
     function loadProgramDetails() {
       const urlParams = new URLSearchParams(window.location.search);
       const program = urlParams.get('program');
@@ -112,23 +114,23 @@
         education: {
           title: "Education Program",
           image: "images/program1.jpg",
-          description: "Our education program helps provide access to quality education...",
+          description: "Our education program provides access to quality education by building schools, offering scholarships, and providing resources to support the academic growth of underprivileged children.",
           childrenHelped: 1200,
-          goals: "Provide education tools, build schools, offer scholarships.",
+          goals: "Build schools, offer scholarships, and provide educational materials to enhance learning environments.",
         },
         healthcare: {
           title: "Healthcare Program",
           image: "images/program2.jpg",
-          description: "Through our healthcare program, we provide essential healthcare services...",
+          description: "Our healthcare program aims to provide essential medical services, including vaccinations, health checkups, and educational sessions for underprivileged children in rural areas.",
           childrenHelped: 800,
-          goals: "Establish clinics, provide vaccinations, offer health education.",
+          goals: "Set up health clinics, organize vaccination campaigns, and provide regular medical checkups.",
         },
         economic: {
-          title: "Economic Empowerment",
+          title: "Economic Empowerment Program",
           image: "images/program3.jpg",
-          description: "Our economic empowerment projects aim to teach practical skills...",
+          description: "Our economic empowerment program focuses on teaching practical skills like agriculture, entrepreneurship, and vocational training to help underprivileged children and youth build sustainable futures.",
           childrenHelped: 600,
-          goals: "Teach job skills, offer entrepreneurship opportunities, provide micro-finance.",
+          goals: "Provide vocational training, entrepreneurship workshops, and micro-finance opportunities.",
         },
       };
 
