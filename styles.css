@@ -35,107 +35,748 @@ header.py-3.mb-4.border-bottom {
 }
 /*  */
 
-
-/* hero */
-.hero-section{
-    margin-top: -30px;
+/* hero  */
+/* Styles for the hero section */
+.hero-section {
+    margin-top: -20px;
     background-image: url('./images/sand2.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 90vh;
     background-attachment: fixed;
-}
-.hero-section > * {
-    position: relative; /* Ensure any content is above the blurred background */
-    z-index: 2; /* Place the content above the pseudo-element */
-}
-
-.hero-content{
- display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  height: 100vh;
-  gap: 2em;
-}
-.hero-image{
-background-color: #1A83C8 ;
-padding: 60px;
-
-    height: auto;
-    max-height: 100vh;
-}
-.hero-text{
-    text-align: left;
-}
-/* x */
-
-/* Programs Section */
-.programs-section {
-    padding: 4rem 2rem;
-    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+  }
+  
+  .hero-section > * {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Content will be side by side on larger screens */
+  .hero-content {
+    display: flex;
+    flex-direction: row; /* Side by side layout */
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+    max-width: 1200px; /* Control max width of the content */
     text-align: center;
   }
   
-  .programs-section h2 {
+  /* Hero image styles */
+  .hero-image {
+    flex: 1; /* Image takes up 1 part of the space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A83C8;
+    padding: 20px;
+  }
+  
+  .hero-image img {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto;
+  }
+  
+  /* Hero text styles */
+  .hero-text {
+    flex: 1; /* Text takes up 1 part of the space */
+    text-align: left;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+  }
+  
+  .hero-text h2 {
     font-size: 2.5rem;
-    color: #2A9D8F; /* Teal color */
-    margin-bottom: 2rem;
+    color: black;
   }
   
-  .programs-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 1em 0;
   }
   
-  .program-card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+  /* Button styling */
+  .hero-btn {
+    margin-top: 1.5em; /* Space above the button */
   }
   
-  .program-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  .hero-btn button {
+    background-color: #1681c7;
+    text-align: center;
+    border: none;
+    color: white;
+    padding: 20px;
+    border-radius: 0px;
+    font-size: 1.2rem;
+    cursor: pointer;
   }
   
-  .program-card img {
+  .hero-btn button:hover {
+    background-color: #e04e2a;
+  }
+  
+  /* Responsive Design for Tablets */
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+      gap: 1.5em;
+    }
+  
+    .hero-image {
+      padding: 40px;
+    }
+  
+    .hero-text h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Responsive Design for Mobile Devices */
+  @media (max-width: 480px) {
+    .hero-section {
+      height: auto;
+      background-attachment: scroll; /* Remove fixed background for mobile */
+      padding: 20px;
+    }
+  
+    .hero-content {
+      flex-direction: column;
+      gap: 1em;
+    }
+  
+    .hero-image {
+      padding: 40px;
+    }
+  
+    .hero-text {
+      padding: 10px;
+    }
+  
+    .hero-text h2 {
+      font-size: 1.6rem;
+    }
+  
+    .hero-text p {
+      font-size: 0.9rem;
+    }
+  
+    .hero-btn button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  
+/*  */
+
+
+
+
+
+/* number counter */
+
+.number-counter {
+    background-color:#D97E30 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Add space between counter containers */
+    flex-wrap: wrap; /* Allow wrapping to new lines if necessary */
+    padding: 20px;
+    margin-top: -100px;
+  }
+  
+  
+  .counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+  }
+  
+  .counter {
+    font-size: 60px;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 580px) {
+    body {
+      flex-direction: column;
+    }
+  }
+  
+
+/*  */
+
+
+
+/* Core Values Section Styles */
+.core-values {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    justify-content: center; /* Centers content horizontally */
+    padding: 20px; /* Adds padding to the section */
+  }
+  
+  /* Individual Core Value Content */
+  .core-value-content {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    margin: 20px; /* Space between items */
+    max-width: 300px; /* Limit the width of each content block */
+    text-align: center; /* Center the text */
+  }
+  
+  /* Image Container with Overlay */
+  .image-container {
+    position: relative; /* For positioning the overlay */
+  }
+  
+  .image-container img {
+    /* max-width: 100%; Ensures responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    width: 500px;
+    max-width: 100%; 
+  }
+  
+  /* Overlay for Hover Effect */
+  .overlay {
+    position: absolute; /* Overlay positioned absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white; /* Text color */
+    display: flex; /* Flex to center the text */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  /* Core Value Text Styles */
+  .core-value-text {
+    margin-top: 10px; /* Space above text */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .core-value-content {
+      max-width: 100%; /* Allow full width on smaller screens */
+    }
+  }
+  
+
+
+
+  /* /*  donation* */
+  .donate {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.donate-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    max-width: 1200px; /* Max width for larger screens */
     width: 100%;
-    height: 180px;
+}
+
+.donate-image-container {
+    flex: 1 1 200px; /* Allow flexibility, minimum width of 200px */
+    margin-right: 20px; /* Space between image and text/form */
+    text-align: center; /* Center the image */
+}
+
+.donate-image-container img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.donate-content p {
+    flex: 2 1 300px; /* Allow flexibility, minimum width of 300px */
+    margin: 0 20px; /* Space around text */
+    line-height: 1.5; /* Improve readability */
+}
+
+.donate-form {
+    flex: 1 1 300px; /* Allow flexibility, minimum width of 300px */
+    padding: 20px;
+    border: 1px solid #ddd; /* Light border around the form */
+    border-radius: 10px; /* Rounded corners */
+    background-color: white; /* White background for the form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.donate-form h3 {
+    margin-top: 0; /* Remove top margin */
+}
+
+.donate-form input[type="text"],
+.donate-form input[type="email"],
+.donate-form input[type="number"] {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+.donate-form button {
+    background-color: #1681c7; /* Button background color */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size for button */
+}
+
+.donate-form button:hover {
+    background-color: #e04e2a; /* Button hover color */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .donate {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center; /* Center align */
+    }
+
+    .donate-content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align */
+    }
+
+    .donate-image-container {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 20px; /* Space below the image */
+    }
+
+    .donate-content p,
+    .donate-form {
+        width: 100%; /* Full width for smaller screens */
+        max-width: none; /* Remove max-width */
+        margin: 0; /* Remove margins */
+    }
+}
+
+.donate-form label {
+    display: inline-block; /* Make labels inline to position side by side */
+    margin-right: 15px; /* Space between radio options */
+    font-size: 1rem; /* Font size for the labels */
+}
+
+
+
+
+  /*  */
+
+
+  /* about us  */
+  .about-us-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 50px;
+  }
+  
+  .about-us-image {
+    flex: 1;
+    position: relative;
+  }
+  
+  .about-us-image img {
+    width: 100%;
+    height: 900px; /* You can adjust this height */
     object-fit: cover;
   }
   
-  .program-card h3 {
+  .about-us-content {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the text */
+    padding: 20px;
+    position: relative;
+    top: -50px; /* Moves the text box upwards to overlap the image */
+    margin-left: -300px; /* Moves the text over the image */
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    border-radius: 10px; /* Optional: Rounded corners */
+  }
+  
+  .about-us-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-us-content p {
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .about-us-container {
+      flex-direction: column; /* Stack the image and text vertically on smaller screens */
+      padding: 20px;
+    }
+  
+    .about-us-content {
+      top: 0;
+      margin-left: 0;
+      margin-top: -20px; /* Optional: Adjust spacing on smaller screens */
+    }
+  
+    .about-us-image img {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-us-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .about-us-content p {
+      font-size: 1rem;
+    }
+  }
+
+
+
+  .mission-vision-purpose {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .section .text {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: For better readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section .text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .section .text p {
+    font-size: 1.2rem;
+  }
+  
+  .section .image {
+    flex: 1;
+  }
+  
+  .section .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Mission Section: Image on the right, text on the left */
+  .mission .image {
+    order: 2;
+  }
+  .mission .text {
+    order: 1;
+  }
+  
+  /* Vision Section: Image on the left, text on the right */
+  .vision .image {
+    order: 1;
+  }
+  .vision .text {
+    order: 2;
+  }
+  
+  /* Purpose Section: Image on the right, text on the left */
+  .purpose .image {
+    order: 2;
+  }
+  .purpose .text {
+    order: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .section .image, .section .text {
+      order: unset; /* Reset the order */
+    }
+  
+    .section .image img {
+      height: 300px; /* Adjust image height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section .text h2 {
+      font-size: 1.5rem;
+    }
+  
+    .section .text p {
+      font-size: 1rem;
+    }
+  }
+  
+  
+  
+
+  .principles {
+    text-align: left;
+    margin: 50px auto;
+    padding: 0 20px;
+    max-width: 800px;
+  }
+  
+  .principles h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .principle h3 {
     font-size: 1.5rem;
-    color: #333;
-    margin: 1rem 0 0.5rem;
+    margin-bottom: 10px;
   }
   
-  .program-card p {
-    padding: 0 1rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+  .principle p {
+    font-size: 1rem;
+    margin-bottom: 20px;
   }
   
-  .cta-btn {
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .principles h2 {
+      font-size: 1.8rem;
+    }
+  
+    .principle h3 {
+      font-size: 1.3rem;
+    }
+  
+    .principle p {
+      font-size: 0.95rem;
+    }
+  }
+  
+
+
+  .my-team {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .my-team h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .team-member {
     display: inline-block;
-    margin: 1rem 0;
-    padding: 0.8rem 1.2rem;
-    background-color: #4CAF50; /* Green color */
-    color: #fff;
+    width: 250px;
+    margin: 20px;
+    vertical-align: top;
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-member p {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .team-member {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .team-member {
+      width: 90%;
+      margin: 10px auto;
+    }
+  }
+  
+  /*  */
+
+
+
+  /* events calender */
+  /* Overall Page Layout */
+.events-page {
+    padding: 20px;
+  }
+  
+  /* Upcoming Event and Calendar Side by Side */
+  .upcoming-calendar-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .upcoming-event, .calendar-container {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .upcoming-event h2, .calendar-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .calendar-container {
+    text-align: center;
+  }
+  
+  #event-date-picker {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  #check-event-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1681c7;
+    color: white;
+    cursor: pointer;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
-    text-decoration: none;
-    transition: background-color 0.3s;
   }
   
-  .cta-btn:hover {
-    background-color: #2A9D8F; /* Teal color */
+  #check-event-btn:hover {
+    background-color: #e04e2a;
   }
   
+  #event-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Recent Events Section */
+  .past-events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .event-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .event-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .event-details {
+    padding: 15px;
+  }
+  
+  .event-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .event-details p {
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .upcoming-calendar-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .past-events-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .event-card img {
+      height: 120px;
+    }
+  
+    .event-details h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .past-events-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .event-card img {
+      height: 100px;
+    }
+  
+    .event-details h3 {
+      font-size: 1rem;
+    }
+  
+    .upcoming-event, .calendar-container {
+      padding: 15px;
+    }
+  }
+  
+  
+  
+  /*  */
