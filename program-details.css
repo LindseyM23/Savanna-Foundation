@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light background for better readability */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+header {
+    background-color: #0056b3; /* Darker blue for navbar */
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo img {
+    width: 40px; /* Logo size */
+    margin-right: 0.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white; /* White text for contrast */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffc107; /* Bootstrap warning color for hover effect */
+}
+
+.burger {
+    display: none; /* Hide burger menu on large screens */
+}
+
+/* Program Details Section */
+.program-details-section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+    background: white; /* White background for content */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.program-details-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #0056b3; /* Use darker blue for headings */
+}
+
+.program-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.program-image-container {
+    width: 100%;
+    max-width: 500px; /* Limit image size */
+    margin-bottom: 1.5rem;
+}
+
+.program-image-container img {
+    width: 100%;
+    border-radius: 8px; /* Rounded corners for images */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+}
+
+.program-info {
+    text-align: left; /* Align text to the left */
+    max-width: 600px; /* Limit content width */
+}
+
+.program-info p {
+    margin-bottom: 1rem; /* Spacing between paragraphs */
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #28a745; /* Success color */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+/* Donation Portal */
+.donation-portal {
+    padding: 2rem 1rem;
+    background: #e9ecef; /* Light grey background */
+    margin: 2rem 0;
+    border-radius: 8px;
+    max-width: 800px; /* Limit width */
+    margin-left: auto;
+    margin-right: auto; /* Center the section */
+}
+
+.donation-portal h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #0056b3; /* Dark blue for headings */
+}
+
+.donation-portal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donation-portal label {
+    margin-bottom: 0.5rem; /* Spacing between label and input */
+    font-weight: bold; /* Make labels bold */
+}
+
+.donation-portal select,
+.donation-portal input[type="number"] {
+    padding: 0.5rem;
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px;
+    width: 100%; /* Full width */
+    max-width: 300px; /* Limit max width */
+    margin-bottom: 1rem; /* Spacing */
+}
+
+.donation-portal .custom-amount-field {
+    display: none; /* Hide custom amount field by default */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #0056b3; /* Use darker blue */
+    color: white;
+    padding: 1.5rem 0;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content a {
+    color: white; /* White links */
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content a:hover {
+    color: #ffc107; /* Change color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .program-content {
+        flex-direction: column; /* Stack content on smaller screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide links on mobile */
+    }
+
+    .burger {
+        display: flex; /* Show burger menu on mobile */
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background: white;
+        margin: 4px 0; /* Spacing between lines */
+        transition: all 0.3s ease;
+    }
+}
+
+/* Animation and Transitions */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.program-details-section,
+.donation-portal {
+    animation: fadeIn 0.5s ease-in; /* Add fade-in animation */
+}
