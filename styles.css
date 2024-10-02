@@ -780,3 +780,35 @@ header.py-3.mb-4.border-bottom {
   
   
   /*  */
+
+  .core-value-img {
+    max-width: 150px; /* Increase image size */
+    border-radius: 50%; /* Make images circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .core-value-img:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+  }
+  
+
+  footer .list-inline-item {
+    margin: 0 10px; /* Space between icons */
+  }
+  
+  footer .list-inline-item a:hover {
+    color: #f8c14d; /* A soft color change on hover for the icons */
+  }
+  
+  footer h5 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  
+  footer ul a:hover {
+    color: #f8c14d; /* Highlight links on hover */
+  }
+  
