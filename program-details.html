@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Program Details - Savanna Junior Foundation</title>
+  <link rel="stylesheet" href="program-details.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="SJF Logo">
+        <span>Savanna Junior Foundation</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="#donate">Donate</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Program Details Section -->
+  <section id="program-details" class="program-details-section">
+    <h2>Program: <span id="program-title"></span></h2>
+    <div class="program-content">
+      <div class="program-image-container">
+        <img id="program-image" src="" alt="Program Image">
+      </div>
+      <div class="program-info">
+        <p id="program-description"></p>
+        <p><strong>Number of Children Helped:</strong> <span id="children-helped">0</span></p>
+        <p><strong>Program Goals:</strong> <span id="program-goals"></span></p>
+        <a href="#donate" class="cta-btn">Donate Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Portal -->
+  <section id="donate" class="donation-portal">
+    <h2>Support the <span id="program-donate-title"></span></h2>
+    <form action="https://www.payfast.co.za/eng/process" method="POST">
+      <input type="hidden" name="merchant_id" value="YOUR_MERCHANT_ID">
+      <input type="hidden" name="merchant_key" value="YOUR_MERCHANT_KEY">
+      <input type="hidden" name="return_url" value="https://your-website.com/thank-you">
+      <input type="hidden" name="cancel_url" value="https://your-website.com/cancel">
+      <input type="hidden" name="notify_url" value="https://your-website.com/payfast-notify">
+
+      <label for="donation-amount">Select Donation Amount:</label>
+      <select name="amount" id="donation-amount">
+        <option value="50">$50</option>
+        <option value="100">$100</option>
+        <option value="250">$250</option>
+        <option value="custom">Custom Amount</option>
+      </select>
+
+      <label for="custom-amount" class="custom-amount-field" style="display:none;">Enter Custom Amount:</label>
+      <input type="number" id="custom-amount" name="custom_amount" style="display:none;">
+
+      <button type="submit" class="cta-btn">Donate Now</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://facebook.com/sjf" target="_blank">Facebook</a>
+        <a href="https://twitter.com/sjf" target="_blank">Twitter</a>
+        <a href="https://instagram.com/sjf" target="_blank">Instagram</a>
+      </div>
+      <p>&copy; 2024 Savanna Junior Foundation | Melsoft Academy</p>
+    </div>
+  </footer>
+
+  <script>
+    // Counter function for the number of children helped
+    function animateCounter(element, target) {
+      let count = 0;
+      const speed = 50;
+      const increment = Math.ceil(target / 100);
+
+      const updateCounter = () => {
+        count += increment;
+        if (count >= target) {
+          element.innerText = target;
+        } else {
+          element.innerText = count;
+          setTimeout(updateCounter, speed);
+        }
+      };
+
+      updateCounter();
+    }
+
+    // Function to load program details
+    function loadProgramDetails() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const program = urlParams.get('program');
+
+      const programData = {
+        education: {
+          title: "Education Program",
+          image: "images/program1.jpg",
+          description: "Our education program provides access to quality education by building schools, offering scholarships, and providing resources to support the academic growth of underprivileged children.",
+          childrenHelped: 1200,
+          goals: "Build schools, offer scholarships, and provide educational materials to enhance learning environments.",
+        },
+        healthcare: {
+          title: "Healthcare Program",
+          image: "images/program2.jpg",
+          description: "Our healthcare program aims to provide essential medical services, including vaccinations, health checkups, and educational sessions for underprivileged children in rural areas.",
+          childrenHelped: 800,
+          goals: "Set up health clinics, organize vaccination campaigns, and provide regular medical checkups.",
+        },
+        economic: {
+          title: "Economic Empowerment Program",
+          image: "images/program3.jpg",
+          description: "Our economic empowerment program focuses on teaching practical skills like agriculture, entrepreneurship, and vocational training to help underprivileged children and youth build sustainable futures.",
+          childrenHelped: 600,
+          goals: "Provide vocational training, entrepreneurship workshops, and micro-finance opportunities.",
+        },
+      };
+
+      const selectedProgram = programData[program];
+
+      if (selectedProgram) {
+        document.getElementById("program-title").innerText = selectedProgram.title;
+        document.getElementById("program-image").src = selectedProgram.image;
+        document.getElementById("program-description").innerText = selectedProgram.description;
+        document.getElementById("program-goals").innerText = selectedProgram.goals;
+        document.getElementById("program-donate-title").innerText = selectedProgram.title;
+
+        // Start the counter animation
+        const childrenHelpedElement = document.getElementById("children-helped");
+        animateCounter(childrenHelpedElement, selectedProgram.childrenHelped);
+      } else {
+        document.getElementById("program-title").innerText = "Program Not Found";
+      }
+    }
+
+    // Call the function to load program details on page load
+    loadProgramDetails();
+  </script>
+</body>
+</html>
