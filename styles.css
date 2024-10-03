@@ -434,7 +434,8 @@ p {
 
 }
 .lead{
-  font-size: 15px;
+  font-size: 20px;
+  color: white;
   background-color: #F2C94C;
   margin-left:100px;
   margin-right: 100px;
