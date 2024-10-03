@@ -8,56 +8,10 @@
   <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  <link rel="stylesheet" href="volunteer.css">
+  <link rel="stylesheet" href="programs.css">
   <style>
     /* Custom Styles */
-    .hero {
-      background-image: url('images/inclusion.png'); /* Replace with your hero image */
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-      font-size: 2.5rem;
-      font-weight: bold;
-    }
-
-    .program-card {
-      transition: transform 0.3s, box-shadow 0.3s;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .program-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .program-card h3 {
-      color: #ff6f61; /* Color for program titles */
-    }
-
-    .program-description {
-      color: #555;
-    }
-
-    .footer {
-      background-color: #343a40;
-      color: #fff;
-    }
-
-    .social-links a {
-      color: #fff;
-      margin-right: 15px;
-      text-decoration: none;
-    }
-
-    .social-links a:hover {
-      text-decoration: underline;
-    }
+    
   </style>
 </head>
 <body>
@@ -100,98 +54,84 @@
             <p class="programs-intro">At Savanna Junior Foundation, we believe that every child deserves a chance to thrive. Our comprehensive programs focus on providing education, healthcare, and economic empowerment to children and adolescents in Africa. Your support helps make a real difference in their lives.</p>
 
             <!-- Programs Grid -->
-            <div class="row">
-                <!-- Program 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="program-card text-center bg-light p-3">
-                        <a href="program-details.html?program=education">
-                            <img src="images/hero-image.png" class="img-fluid program-img rounded" alt="Education Program">
-                            <h3 class="mt-3">Education Program</h3>
-                        </a>
-                        <p class="program-description">Through our Education Program, we aim to reduce the educational gap by providing access to quality learning materials, school supplies, and scholarships for African children who need them the most.</p>
-                        <a href="program-details.html?program=education" class="btn btn-primary mt-3">Learn More</a>
-                    </div>
-                </div>
-
-                <!-- Program 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="program-card text-center bg-light p-3">
-                        <a href="program-details.html?program=healthcare">
-                            <img src="images/hero-image.png" class="img-fluid program-img rounded" alt="Healthcare Program">
-                            <h3 class="mt-3">Healthcare Program</h3>
-                        </a>
-                        <p class="program-description">In underserved communities, access to basic healthcare can mean the difference between life and death. Our Healthcare Program provides critical medical services, vaccinations, and nutritional support to children in need.</p>
-                        <a href="program-details.html?program=healthcare" class="btn btn-primary mt-3">Learn More</a>
-                    </div>
-                </div>
-
-                <!-- Program 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="program-card text-center bg-light p-3">
-                        <a href="program-details.html?program=empowerment">
-                            <img src="images/hero-image.png" class="img-fluid program-img rounded" alt="Youth Empowerment Program">
-                            <h3 class="mt-3">Youth Empowerment Program</h3>
-                        </a>
-                        <p class="program-description">We empower children and their families by teaching them valuable vocational skills, entrepreneurship, and financial literacy. Through our Economic Empowerment Program, we help them break the cycle of poverty.</p>
-                        <a href="program-details.html?program=empowerment" class="btn btn-primary mt-3">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <div class="program-section">
+              <div class="program-row">
+                  <!-- Program 1 -->
+                  <div class="program-col">
+                      <div class="program-card">
+                          <a href="program-details.html?program=education">
+                              <img src="images/hero-image.png" class="program-img" alt="Education Program">
+                              <h3>Education Program</h3>
+                          </a>
+                          <p>Through our Education Program, we aim to reduce the educational gap by providing access to quality learning materials, school supplies, and scholarships for African children who need them the most.</p>
+                          <a href="program-details.html?program=education" class="btn">Learn More</a>
+                      </div>
+                  </div>
+          
+                  <!-- Program 2 -->
+                  <div class="program-col">
+                      <div class="program-card">
+                          <a href="program-details.html?program=healthcare">
+                              <img src="images/hero-image.png" class="program-img" alt="Healthcare Program">
+                              <h3>Healthcare Program</h3>
+                          </a>
+                          <p>In underserved communities, access to basic healthcare can mean the difference between life and death. Our Healthcare Program provides critical medical services, vaccinations, and nutritional support to children in need.</p>
+                          <a href="program-details.html?program=healthcare" class="btn">Learn More</a>
+                      </div>
+                  </div>
+          
+                  <!-- Program 3 -->
+                  <div class="program-col">
+                      <div class="program-card">
+                          <a href="program-details.html?program=empowerment">
+                              <img src="images/hero-image.png" class="program-img" alt="Youth Empowerment Program">
+                              <h3>Youth Empowerment Program</h3>
+                          </a>
+                          <p>We empower children and their families by teaching them valuable vocational skills, entrepreneurship, and financial literacy. Through our Economic Empowerment Program, we help them break the cycle of poverty.</p>
+                          <a href="program-details.html?program=empowerment" class="btn">Learn More</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
     </section>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark text-white">
-        <div class="container">
+    <footer>
+      <div class="container">
           <div class="row">
-            <!-- Contact Us Section -->
-            <div class="col-md-4">
-              <h5 style="color: white;">Contact Us</h5>
-              <p style="color: white;">Email: <a href="mailto:info@savannajuniorfoundation.org" class="text-white">info@savannajuniorfoundation.org</a></p>
-              <p style="color: white;">Phone: <a href="tel:+1234567890" class="text-white">+123 456 7890</a></p>
-            </div>
-            <!-- Quick Links Section -->
-            <div class="col-md-4">
-              <h5 style="color: white;">Quick Links</h5>
-              <ul class="list-unstyled">
-                <li><a href="/" class="text-white">Home</a></li>
-                <li><a href="/AboutUs.html" class="text-white">About Us</a></li>
-                <li><a href="/Contact.html" class="text-white">Contact Us</a></li>
-                <li><a href="/Volunteer.html" class="text-white">Volunteer</a></li>
-              </ul>
-            </div>
-            <!-- Follow Us Section -->
-            <div class="col-md-4 text-center">
-              <h5 style="color: white;">Follow Us</h5>
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a href="#" class="text-white">
-                    <i class="fab fa-facebook fa-lg"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" class="text-white">
-                    <i class="fab fa-twitter fa-lg"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" class="text-white">
-                    <i class="fab fa-instagram fa-lg"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#" class="text-white">
-                    <i class="fab fa-linkedin fa-lg"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <!-- Contact Us Section -->
+              <div class="col">
+                  <h5>Contact Us</h5>
+                  <p>Email: <a href="mailto:info@savannajuniorfoundation.org">info@savannajuniorfoundation.org</a></p>
+                  <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+              </div>
+              <!-- Quick Links Section -->
+              <div class="col">
+                  <h5>Quick Links</h5>
+                  <ul>
+                      <li><a href="/">Home</a></li>
+                      <li><a href="/AboutUs.html">About Us</a></li>
+                      <li><a href="/Contact.html">Contact Us</a></li>
+                      <li><a href="/Volunteer.html">Volunteer</a></li>
+                  </ul>
+              </div>
+              <!-- Follow Us Section -->
+              <div class="col">
+                  <h5>Follow Us</h5>
+                  <ul class="social-links">
+                      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                  </ul>
+              </div>
           </div>
-          <div class="text-center mt-4">
-            <p style="color: white;">&copy; 2024 Savanna Junior Foundation. All rights reserved.</p>
+          <div class="footer-bottom">
+              <p>&copy; 2024 Savanna Junior Foundation. All rights reserved.</p>
           </div>
-        </div>
-      </footer>
+      </div>
+    </footer>
 
 </body>
 </html>

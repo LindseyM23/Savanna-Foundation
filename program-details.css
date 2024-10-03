@@ -11,6 +11,8 @@ body {
 header {
     background-color: #0056b3; /* Darker blue for navbar */
     padding: 1rem 0;
+    
+  
 }
 
 .navbar {
@@ -216,3 +218,83 @@ header {
 .donation-portal {
     animation: fadeIn 0.5s ease-in; /* Add fade-in animation */
 }
+
+footer {
+    background-color: #F3CA4D;
+    color: white;
+    padding: 50px 0;
+  }
+  
+  /* Container */
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Footer columns */
+  footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  footer .col {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  footer h5 {
+    margin-bottom: 15px;
+  }
+  
+  /* Links */
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Social icons */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .social-links li {
+    margin: 0 10px;
+  }
+  
+  .social-links a {
+    font-size: 24px;
+    color: white;
+  }
+  
+  /* Footer bottom */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    footer .col {
+        margin-bottom: 20px;
+    }
+  }
+  
+    

@@ -16,9 +16,9 @@ body {
 
 /* Navbar */
 .custom-navbar {
-    background-color: #005f73;
     border-bottom: 2px solid #0a9396;
     padding: 10px 0;
+    font-weight: lighter;
 }
 
 .nav {
@@ -124,7 +124,7 @@ header {
 
 .cta-btn {
     display: inline-block;
-    background-color: #005f73;
+    background-color: #0a9396;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -252,109 +252,145 @@ header {
   
 
 /* Footer */
-.footer {
-    background-color: #005f73;
-    padding: 30px 0;
-    color: #fff;
-    text-align: center;
+/* Footer container */
+footer {
+    background-color: #0a9396;
+    color: white;
+    padding: 50px 0;
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+/* Container */
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.social-links {
+/* Footer columns */
+footer .row {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    flex: 1;
+    margin: 10px;
+}
+
+footer h5 {
     margin-bottom: 15px;
 }
 
-.social-links a {
-    color: #94d2bd;
+/* Links */
+footer a {
+    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
 }
 
-.social-links a:hover {
-    color: #fff;
+footer ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.footer p {
-    margin: 0;
-    font-size: 1rem;
+footer ul li {
+    margin-bottom: 10px;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1200px) {
-    .resource-card,
-    .impact-card,
-    .testimonial {
-        width: 45%;
-    }
+/* Social icons */
+.social-links {
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a {
+    font-size: 24px;
+    color: white;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .resources-container,
-    .impact-cards,
-    .testimonials-container {
+    footer .row {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
 
-    .resource-card,
-    .impact-card,
-    .testimonial {
-        width: 80%;
+    footer .col {
         margin-bottom: 20px;
     }
+}
 
-    .nav {
-        flex-direction: column;
-        align-items: center;
+
+
+/* cta section */
+/* Call to Action Section */
+.cta-section {
+    background-color: #0a9396;/* Primary blue */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Container */
+.cta-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Headline */
+.cta-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Lead Text */
+.cta-section .lead {
+    font-size: 1.25em;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.cta-section .btn {
+    padding: 15px 30px;
+    font-size: 1.25em;
+    background-color: #f8f9fa; /* Light button */
+    color: #007bff; /* Primary blue for text */
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.cta-section .btn:hover {
+    background-color: #e2e6ea; /* Lighter gray on hover */
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cta-section h2 {
+        font-size: 2em;
     }
 
-    .header-title {
-        font-size: 2rem;
-        flex-direction: column;
+    .cta-section .lead {
+        font-size: 1.1em;
     }
 
-    header img {
-        margin-bottom: 10px;
+    .cta-section .btn {
+        padding: 12px 24px;
+        font-size: 1.1em;
     }
 }
 
-@media (max-width: 480px) {
-    .resource-card img,
-    .impact-card h3,
-    .testimonial img {
-        width: 100%;
-    }
-
-    .cta-btn {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-
-    .nav-link {
-        padding: 8px;
-    }
-
-    .header-title {
-        font-size: 1.8rem;
-        margin-left: 0;
-    }
-
-    .resources-section h2,
-    .impact-section h2,
-    .testimonials-section h2 {
-        font-size: 2rem;
-    }
-
-    .impact-card h3 {
-        font-size: 1.8rem;
-    }
-}
+/*  */

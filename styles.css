@@ -1,13 +1,13 @@
 /* navbar */
 .custom-navbar {
-    background-color: #D97E30; 
+    background-color: #D97E30 ; 
     padding-bottom: 0 !important; 
     position: sticky;
 }
 
 header.py-3.mb-4.border-bottom {
     padding-top: 30px;
-    background-color:#D97E30 ;
+    background-color: #F2C94C ;
     
 }
 .header-title{
@@ -37,7 +37,7 @@ header.py-3.mb-4.border-bottom {
 
 /* hero  */
 /* Styles for the hero section */
-.hero-section {
+ .hero-section {
     margin-top: -20px;
     background-image: url('./images/sand2.png');
     background-repeat: no-repeat;
@@ -172,9 +172,9 @@ header.py-3.mb-4.border-bottom {
       font-size: 1rem;
       padding: 10px 20px;
     }
-  }
+  } */
   
-/*  */
+/* 
 
 
 
@@ -239,10 +239,12 @@ header.py-3.mb-4.border-bottom {
   /* Image Container with Overlay */
   .image-container {
     position: relative; /* For positioning the overlay */
+    
   }
   
   .image-container img {
     /* max-width: 100%; Ensures responsiveness */
+    max-width: 100%;
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: rounded corners */
     width: 500px;
@@ -282,6 +284,89 @@ header.py-3.mb-4.border-bottom {
     }
   }
   
+  .core-value-img {
+    max-width: 100px;
+    border-radius: 1%; /* Make images circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: none;
+  }
+  
+  .core-value-img:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+  }
+
+
+  /*  */
+
+
+  /* impact section */
+  .py-5 {
+    padding-top: 3rem; /* Adjust top padding */
+    padding-bottom: 3rem; /* Adjust bottom padding */
+}
+
+.bg-primary {
+    background-color: #F5F5F5; /* Neutral background color */
+    color: #333; /* Darker text color for contrast */
+    text-align: center; /* Center text for all elements */
+}
+
+.container {
+    max-width: 1200px; /* Max width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding on the sides */
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem; /* Margin bottom for headings */
+}
+
+.lead {
+    font-size: 1.25rem; /* Larger font for lead paragraph */
+    color: #666; /* Lighter gray for readability */
+}
+
+.row {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space elements evenly */
+    flex-wrap: wrap; /* Wrap items if necessary */
+}
+
+.col-md-4 {
+    flex: 1 1 30%; /* Set basis for flex items */
+    max-width: 30%; /* Limit maximum width */
+    margin: 10px; /* Space between items */
+    text-align: center; /* Center text */
+}
+
+.counter {
+    font-size: 3rem; /* Large font size for counters */
+    margin: 0; /* Remove default margin */
+    font-family: 'Courier New', Courier, monospace; /* Change font for numbers */
+    color: #D97430; /* Accent color for numbers */
+}
+
+p {
+    color: #666; /* Lighter gray for paragraph text */
+    font-size: 1rem; /* Adjust font size for paragraphs */
+    line-height: 1.5; /* Improve readability */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .col-md-4 {
+        max-width: 100%; /* Allow items to take full width */
+        margin: 10px 0; /* Add vertical spacing between items */
+    }
+}
+  /*  */
 
 
 
@@ -343,6 +428,32 @@ header.py-3.mb-4.border-bottom {
     border: 1px solid #ccc; /* Border for inputs */
     border-radius: 5px; /* Rounded corners for inputs */
 }
+.display-4{
+  font-weight: bolder;
+  font-size: 100px ;
+
+}
+.lead{
+  font-size: 15px;
+  background-color: #F2C94C;
+  margin-left:100px;
+  margin-right: 100px;
+  border-radius: 20px;
+
+}
+
+.btn-custom{
+  background-color: #d97e30;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+.btn-custom:hover{
+  background-color: #F2C94C;
+}
+
 
 .donate-form button {
     background-color: #1681c7; /* Button background color */
@@ -387,260 +498,470 @@ header.py-3.mb-4.border-bottom {
     display: inline-block; /* Make labels inline to position side by side */
     margin-right: 15px; /* Space between radio options */
     font-size: 1rem; /* Font size for the labels */
+
+    }
+
+
+/* core values */
+.container {
+  max-width: 1200px; /* Max width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add padding on the sides */
 }
 
 
+
+.core-values-heading {
+  font-size: 2.5rem; /* Adjust font size */
+  color: #1F88CC; /* Heading color */
+  font-weight: bold; /* Bold heading */
+  text-transform: uppercase; /* Uppercase letters */
+  letter-spacing: 1px; /* Spacing between letters */
+  margin-bottom: 20px; /* Add space below the heading */
+  text-align: center;
+}
+
+.row {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Space items evenly */
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.core-value {
+  flex: 1 1 30%; /* Allow items to grow and shrink, with a base width of 30% */
+  max-width: 30%; /* Set a maximum width */
+  margin: 10px; /* Space between core-value items */
+  text-align: center; /* Center the text */
+}
+
+.core-value-img {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+  width: 80%; /* Set width to 80% to enlarge images */
+  margin-bottom: 15px; /* Space between image and text */
+}
+
+/* Optional: Add styles for the h4 and p elements */
+h4 {
+  color: #D97430; /* Set heading color */
+  margin-bottom: 10px; /* Space between heading and paragraph */
+  font-weight: bold; /* Bold text */
+}
+
+p {
+  color: #333; /* Dark gray for readability */
+  font-size: 1rem; /* Adjust font size for paragraphs */
+  line-height: 1.5; /* Improve readability */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .core-value {
+    flex: 1 1 100%; /* Allow items to take full width on smaller screens */
+    max-width: 100%; /* Remove max-width */
+  }
+
+  .core-value-img {
+    width: 100%; /* Set image width to 100% on small screens */
+  }
+}
+
+
+/* impact section */
+.impact {
+  background: linear-gradient(135deg, #4AB7E2 0%, #F5A143 100%); /* Brighter gradient background */
+
+  color: white; /* Text color */
+  padding: 40px 0; /* Vertical padding */
+}
+
+.container {
+  max-width: 1200px; /* Max width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add padding on the sides */
+}
+
+.impact-heading {
+  font-size: 2.5rem; /* Font size for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+}
+
+.impact-description {
+  font-size: 1.25rem; /* Font size for the description */
+  margin-bottom: 40px; /* Space below the description */
+  color: white;
+}
+
+.impact-row {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space items evenly */
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.impact-item {
+  flex: 1 1 calc(33.333% - 20px); /* Flex basis for each item */
+  margin: 10px; /* Margin around items */
+  text-align: center; /* Center the text */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside items */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.impact-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/* Optional styles for the counter */
+.counter {
+  font-size: 3rem; /* Font size for the counter */
+  margin: 0; /* Reset margin */
+  color: #D97430; /* Counter color */
+  font-weight: bold; /* Bold counter */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .impact-item {
+    flex: 1 1 100%; /* Allow items to take full width on smaller screens */
+    max-width: 100%; /* Remove max-width */
+  }
+}
+
+/* success stories */
+.success-stories {
+  background-color: #F8F9FA; /* Light background color */
+  padding: 40px 0; /* Vertical padding */
+}
+
+.container {
+  max-width: 1200px; /* Max width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add padding on the sides */
+}
+
+.text-left {
+  text-align: left; /* Align text to the left */
+  margin-bottom: 40px; /* Space below the heading and description */
+}
+
+.success-heading {
+  font-size: 2.5rem; /* Font size for the heading */
+  text-align: center;
+}
+
+.success-description {
+  font-size: 1.25rem; /* Font size for the description */
+  text-align: center;
+}
+
+.stories-row {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.story-card {
+  flex: 1 1 calc(33.333% - 20px); /* Flex basis for each card */
+  margin: 10px; /* Margin around cards */
+  background-color: white; /* White background for cards */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  overflow: hidden; /* Prevent content overflow */
+  transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.story-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.story-img {
+  width: 100%; /* Full width for images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.story-body {
+  padding: 15px; /* Padding inside the card */
+}
+
+.story-title {
+  font-size: 1.5rem; /* Font size for the title */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.story-text {
+  color: #333; /* Dark gray for readability */
+  font-size: 1rem; /* Adjust font size for paragraphs */
+  line-height: 1.5; /* Improve readability */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .story-card {
+      flex: 1 1 100%; /* Allow cards to take full width on smaller screens */
+      max-width: 100%; /* Remove max-width */
+  }
+}
+
+
+/*  */
 
 
   /*  */
 
 
   /* about us  */
+ /* General Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Use a clean font */
+  color: #333; /* General text color */
+  background-color: #f9f9f9; /* Light background for the entire body */
+}
+
+/* About Us Section */
+.about-us-section {
+  background-color: #4AB7E2; /* Light blue background */
+}
+
+.about-us-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 50px;
+}
+
+.about-us-image {
+  flex: 1;
+  position: relative;
+  
+}
+
+.about-us-image img {
+  width: 100%;
+  height: 100%; /* Adjusted height for better aspect ratio */
+  object-fit: cover;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.about-us-content {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque background */
+  padding: 20px;
+  position: relative;
+  top: -30px; /* Reduced overlap */
+  margin-left: -250px; /* Adjusted for better visual balance */
+  z-index: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.about-us-content h2 {
+  font-size: 2.5rem; /* Increased heading size */
+  color: #1e88e5; /* Primary color */
+  margin-bottom: 10px;
+}
+
+.about-us-content p {
+  font-size: 1.2rem;
+  line-height: 1.6; /* Improved line spacing */
+}
+
+/* Responsive Design for About Us */
+@media (max-width: 768px) {
   .about-us-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 50px;
-  }
-  
-  .about-us-image {
-    flex: 1;
-    position: relative;
-  }
-  
-  .about-us-image img {
-    width: 100%;
-    height: 900px; /* You can adjust this height */
-    object-fit: cover;
-  }
-  
-  .about-us-content {
-    flex: 1;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the text */
-    padding: 20px;
-    position: relative;
-    top: -50px; /* Moves the text box upwards to overlap the image */
-    margin-left: -300px; /* Moves the text over the image */
-    z-index: 1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-    border-radius: 10px; /* Optional: Rounded corners */
-  }
-  
-  .about-us-content h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  .about-us-content p {
-    font-size: 1.2rem;
-  }
-  
-  @media (max-width: 768px) {
-    .about-us-container {
-      flex-direction: column; /* Stack the image and text vertically on smaller screens */
+      flex-direction: column;
       padding: 20px;
-    }
-  
-    .about-us-content {
+  }
+
+  .about-us-content {
       top: 0;
       margin-left: 0;
-      margin-top: -20px; /* Optional: Adjust spacing on smaller screens */
-    }
-  
-    .about-us-image img {
+      margin-top: -20px;
+  }
+
+  .about-us-image img {
       height: 300px;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .about-us-content h2 {
-      font-size: 1.5rem;
-    }
-  
-    .about-us-content p {
+}
+
+@media (max-width: 480px) {
+  .about-us-content h2 {
+      font-size: 1.8rem; /* Adjusted heading for small screens */
+  }
+
+  .about-us-content p {
       font-size: 1rem;
-    }
   }
+}
 
+/* Mission, Vision, and Purpose Section */
+.mission-vision-purpose {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+  background-color: #fff; /* White background */
+}
 
+.section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+}
 
-  .mission-vision-purpose {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding: 50px;
-  }
-  
+.section .text {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section .text h2 {
+  font-size: 2rem;
+  color: #1e88e5; /* Primary color */
+  margin-bottom: 10px;
+}
+
+.section .text p {
+  font-size: 1.2rem;
+  line-height: 1.5; /* Improved readability */
+}
+
+.section .image {
+  flex: 1;
+}
+
+.section .image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Responsive Design for Mission, Vision, and Purpose */
+@media (max-width: 768px) {
   .section {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    justify-content: space-between;
-  }
-  
-  .section .text {
-    flex: 1;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Optional: For better readability */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .section .text h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  .section .text p {
-    font-size: 1.2rem;
-  }
-  
-  .section .image {
-    flex: 1;
-  }
-  
-  .section .image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  /* Mission Section: Image on the right, text on the left */
-  .mission .image {
-    order: 2;
-  }
-  .mission .text {
-    order: 1;
-  }
-  
-  /* Vision Section: Image on the left, text on the right */
-  .vision .image {
-    order: 1;
-  }
-  .vision .text {
-    order: 2;
-  }
-  
-  /* Purpose Section: Image on the right, text on the left */
-  .purpose .image {
-    order: 2;
-  }
-  .purpose .text {
-    order: 1;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .section {
       flex-direction: column;
       text-align: center;
-    }
-  
-    .section .image, .section .text {
-      order: unset; /* Reset the order */
-    }
-  
-    .section .image img {
-      height: 300px; /* Adjust image height for smaller screens */
-    }
   }
-  
-  @media (max-width: 480px) {
-    .section .text h2 {
+
+  .section .image, .section .text {
+      order: unset;
+  }
+
+  .section .image img {
+      height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section .text h2 {
       font-size: 1.5rem;
-    }
-  
-    .section .text p {
+  }
+
+  .section .text p {
       font-size: 1rem;
-    }
   }
-  
-  
-  
+}
 
-  .principles {
-    text-align: left;
-    margin: 50px auto;
-    padding: 0 20px;
-    max-width: 800px;
-  }
-  
+/* Principles Section */
+.principles {
+  text-align: left;
+  margin: 50px auto;
+  padding: 0 20px;
+  max-width: 800px;
+}
+
+.principles h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color:#1681c7 /* Primary color */
+}
+
+.principle {
+  margin-bottom: 30px; /* Space between principles */
+  padding: 20px;
+  border: 1px solid #1e88e5; /* Add border to principles */
+  border-radius: 10px; /* Rounded corners */
+  background-color: rgba(230, 242, 255, 0.5); /* Light background for better visibility */
+}
+
+.principle h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.principle p {
+  font-size: 1rem;
+}
+
+/* Responsive Design for Principles */
+@media (max-width: 768px) {
   .principles h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-  
-  .principle h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .principle p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .principles h2 {
       font-size: 1.8rem;
-    }
-  
-    .principle h3 {
+  }
+
+  .principle h3 {
       font-size: 1.3rem;
-    }
-  
-    .principle p {
+  }
+
+  .principle p {
       font-size: 0.95rem;
-    }
   }
-  
+}
 
+/* Meet Our Team Section */
+.my-team {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #D97430
+}
 
-  .my-team {
-    text-align: center;
-    padding: 50px 20px;
-  }
-  
-  .my-team h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
-  
+.my-team h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: white /* Primary color */
+}
+
+.team-member {
+  display: inline-block;
+  width: 250px;
+  margin: 20px;
+  vertical-align: top;
+  text-align: center;
+  background-color: white;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Responsive Design for Meet Our Team */
+@media (max-width: 768px) {
   .team-member {
-    display: inline-block;
-    width: 250px;
-    margin: 20px;
-    vertical-align: top;
-    text-align: center;
-  }
-  
-  .team-member img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .team-member p {
-    margin-top: 10px;
-    font-size: 1rem;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .team-member {
       width: 45%;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .team-member {
+}
+
+@media (max-width: 480px) {
+  .team-member {
       width: 90%;
       margin: 10px auto;
-    }
   }
+}
+
   
   /*  */
 
@@ -781,34 +1102,91 @@ header.py-3.mb-4.border-bottom {
   
   /*  */
 
-  .core-value-img {
-    max-width: 200px; /* Increase image size */
-    border-radius: 15%; /* Make images circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .core-value-img:hover {
-    transform: scale(1.1); /* Slightly increase size on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
-  }
+
+  /* donation */
+  /* Donation Section */
+
+
+  /*  */
+ 
   
 /* footer */
-  footer .list-inline-item {
-    margin: 0 10px; /* Space between icons */
+footer {
+  background-color: #F3CA4D;
+  color: white;
+  padding: 50px 0;
+}
+
+/* Container */
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Footer columns */
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  flex: 1;
+  margin: 10px;
+}
+
+footer h5 {
+  margin-bottom: 15px;
+}
+
+/* Links */
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+/* Social icons */
+.social-links {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links a {
+  font-size: 24px;
+  color: white;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  footer .row {
+      flex-direction: column;
+      text-align: center;
   }
-  
-  footer .list-inline-item a:hover {
-    color: #f8c14d; /* A soft color change on hover for the icons */
+
+  footer .col {
+      margin-bottom: 20px;
   }
-  
-  footer h5 {
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-size: 18px;
-  }
-  
-  footer ul a:hover {
-    color: #f8c14d; /* Highlight links on hover */
-  }
+}
+
   

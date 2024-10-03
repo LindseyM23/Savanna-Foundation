@@ -52,3 +52,7 @@ const customRadio = document.querySelector('input[value="custom"]');
   });
 
 // 
+// number counter functionality
+
+ 
+
