@@ -547,11 +547,12 @@ h4 {
   color: #D97430; /* Set heading color */
   margin-bottom: 10px; /* Space between heading and paragraph */
   font-weight: bold; /* Bold text */
+  font-size: 30px;
 }
 
 p {
   color: #333; /* Dark gray for readability */
-  font-size: 1rem; /* Adjust font size for paragraphs */
+  font-size: 20px;
   line-height: 1.5; /* Improve readability */
 }
 
