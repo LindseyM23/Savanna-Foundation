@@ -1,0 +1,313 @@
+/* nav bar */
+.custom-navbar {
+    padding: 10px 20px;
+    max-width: 1800px; 
+    margin: auto; 
+    margin-top: 0px;
+  }
+  
+  .custom-logo {
+    max-width: 200px; 
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin: 10px; 
+  }
+  
+  .navbar-brand {
+    font-size: 50px; 
+    font-weight: bold; 
+  
+  }
+  .navbar-brand {
+    font-size: 40px; 
+    font-weight: bold; 
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .navbar-brand {
+        font-size: 90px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 60px; 
+    }
+  }
+  
+  
+  .nav-link {
+    font-size: 17px; 
+    padding: 10px 15px; 
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline; 
+  }
+  
+  
+  .nav-link.active {
+    font-weight: bold; 
+    text-decoration: underline; 
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .custom-navbar {
+        padding: 10px; 
+    }
+  
+    .navbar-brand {
+        font-size: 1.5rem; 
+    }
+  
+    .nav-link {
+        font-size: 1.1rem; 
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .custom-logo {
+        max-width: 120px;
+    }
+  
+    .nav-link {
+        padding: 8px 10px; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.25rem; 
+    }
+  
+    .nav-link {
+        font-size: 1rem; 
+    }
+  
+    .nav-link {
+        padding: 6px 8px; 
+    }
+  
+   
+    .custom-navbar {
+        padding: 5px; 
+    }
+  }
+  
+  /*  */
+  
+  /* /*  donation* */
+  .donate {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.donate-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    max-width: 1200px; /* Max width for larger screens */
+    width: 100%;
+}
+
+.donate-image-container {
+    flex: 1 1 200px; /* Allow flexibility, minimum width of 200px */
+    margin-right: 20px; /* Space between image and text/form */
+    text-align: center; /* Center the image */
+}
+
+.donate-image-container img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.donate-content p {
+    flex: 2 1 300px; /* Allow flexibility, minimum width of 300px */
+    margin: 0 20px; /* Space around text */
+    line-height: 1.5; /* Improve readability */
+}
+
+.donate-form {
+    flex: 1 1 300px; /* Allow flexibility, minimum width of 300px */
+    padding: 20px;
+    border: 1px solid #ddd; /* Light border around the form */
+    border-radius: 10px; /* Rounded corners */
+    background-color: white; /* White background for the form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.donate-form h3 {
+    margin-top: 0; /* Remove top margin */
+}
+
+.donate-form input[type="text"],
+.donate-form input[type="email"],
+.donate-form input[type="number"] {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+.display-4{
+  font-weight: bolder;
+  font-size: 100px ;
+
+}
+.lead{
+  font-size: 20px;
+  color: white;
+  background-color: #F2C94C;
+  margin-left:100px;
+  margin-right: 100px;
+  border-radius: 20px;
+
+}
+
+.btn-custom{
+  background-color: #d97e30;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+.btn-custom:hover{
+  background-color: #F2C94C;
+}
+
+
+.donate-form button {
+    background-color: #1681c7; /* Button background color */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size for button */
+}
+
+.donate-form button:hover {
+    background-color: #e04e2a; /* Button hover color */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .donate {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center; /* Center align */
+    }
+
+    .donate-content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align */
+    }
+
+    .donate-image-container {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 20px; /* Space below the image */
+    }
+
+    .donate-content p,
+    .donate-form {
+        width: 100%; /* Full width for smaller screens */
+        max-width: none; /* Remove max-width */
+        margin: 0; /* Remove margins */
+    }
+}
+
+.donate-form label {
+    display: inline-block; /* Make labels inline to position side by side */
+    margin-right: 15px; /* Space between radio options */
+    font-size: 1rem; /* Font size for the labels */
+
+    }
+
+
+  /* footer */
+  footer {
+    background-color: #F3CA4D;
+    color: white;
+    padding: 50px 0;
+  }
+  
+  /* Container */
+  footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Footer columns */
+  footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  footer .col {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  footer h5 {
+    margin-bottom: 15px;
+  }
+  
+  /* Links */
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Social icons */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .social-links li {
+    margin: 0 10px;
+  }
+  
+  .social-links a {
+    font-size: 24px;
+    color: white;
+  }
+  
+  /* Footer bottom */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    footer .col {
+        margin-bottom: 20px;
+    }
+  }  
+  /*  */

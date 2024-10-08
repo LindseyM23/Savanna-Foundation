@@ -1,60 +1,104 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa; /* Light background for better readability */
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-/* Navbar Styles */
-header {
-    background-color: #0056b3; /* Darker blue for navbar */
-    padding: 1rem 0;
-    
+/* nav bar */
+.custom-navbar {
+    padding: 10px 20px;
+    max-width: 1800px; 
+    margin: auto; 
+    margin-top: 0px;
+  }
   
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 2rem;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    color: white;
-}
-
-.logo img {
-    width: 40px; /* Logo size */
-    margin-right: 0.5rem;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white; /* White text for contrast */
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #ffc107; /* Bootstrap warning color for hover effect */
-}
-
-.burger {
-    display: none; /* Hide burger menu on large screens */
-}
+  .custom-logo {
+    max-width: 200px; 
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin: 10px; 
+  }
+  
+  .navbar-brand {
+    font-size: 50px; 
+    font-weight: bold; 
+  
+  }
+  .navbar-brand {
+    font-size: 40px; 
+    font-weight: bold; 
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .navbar-brand {
+        font-size: 90px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 60px; 
+    }
+  }
+  
+  
+  .nav-link {
+    font-size: 17px; 
+    padding: 10px 15px; 
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline; 
+  }
+  
+  
+  .nav-link.active {
+    font-weight: bold; 
+    text-decoration: underline; 
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .custom-navbar {
+        padding: 10px; 
+    }
+  
+    .navbar-brand {
+        font-size: 1.5rem; 
+    }
+  
+    .nav-link {
+        font-size: 1.1rem; 
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .custom-logo {
+        max-width: 120px;
+    }
+  
+    .nav-link {
+        padding: 8px 10px; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.25rem; 
+    }
+  
+    .nav-link {
+        font-size: 1rem; 
+    }
+  
+    .nav-link {
+        padding: 6px 8px; 
+    }
+  
+   
+    .custom-navbar {
+        padding: 5px; 
+    }
+  }
+  
+  /*  */
+    
 
 /* Program Details Section */
 .program-details-section {

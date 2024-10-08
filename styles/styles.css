@@ -1,22 +1,14 @@
-/* navbar */
+
+
 .custom-navbar {
-    background-color: #D97E30 ; 
-    padding-bottom: 0 !important; 
-    position: sticky;
+  background-color: #F2C94C;
 }
 
-header.py-3.mb-4.border-bottom {
-    padding-top: 30px;
-    background-color: #F2C94C ;
-    
-}
-.header-title{
-    color: white;
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: white;
 }
 
-.custom-navbar .nav-link:hover {
-    color: #6a6968 !important; 
-}
 
 /*  */
 

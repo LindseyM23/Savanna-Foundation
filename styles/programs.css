@@ -1,16 +1,138 @@
-.hero {
-    background-image: url('images/inclusion.png'); /* Replace with your hero image */
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
+/* nav bar */
+.custom-navbar {
+  padding: 10px 20px;
+  max-width: 1800px; 
+  margin: auto; 
+  margin-top: 0px;
+}
+
+.custom-logo {
+  max-width: 200px; 
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+  margin: 10px; 
+}
+
+.navbar-brand {
+  font-size: 50px; 
+  font-weight: bold; 
+
+}
+.navbar-brand {
+  font-size: 40px; 
+  font-weight: bold; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .navbar-brand {
+      font-size: 90px;
   }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+      font-size: 60px; 
+  }
+}
+
+
+.nav-link {
+  font-size: 17px; 
+  padding: 10px 15px; 
+}
+
+.nav-link:hover {
+  text-decoration: underline; 
+}
+
+
+.nav-link.active {
+  font-weight: bold; 
+  text-decoration: underline; 
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .custom-navbar {
+      padding: 10px; 
+  }
+
+  .navbar-brand {
+      font-size: 1.5rem; 
+  }
+
+  .nav-link {
+      font-size: 1.1rem; 
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-logo {
+      max-width: 120px;
+  }
+
+  .nav-link {
+      padding: 8px 10px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+      font-size: 1.25rem; 
+  }
+
+  .nav-link {
+      font-size: 1rem; 
+  }
+
+  .nav-link {
+      padding: 6px 8px; 
+  }
+
+ 
+  .custom-navbar {
+      padding: 5px; 
+  }
+}
+
+/*  */
+  
+
+
+
+/* hero section */
+.hero {
+  background-image: url('../images/inclusion.png');
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: scroll; 
+  width: 100vw; 
+  height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  color: white;
+  text-align: center;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  
+  font-size: 60px; 
+  font-weight: bold; 
+  color: #ffffff; 
+  text-shadow: 2px 13px 4px rgba(0, 0, 0, 0.5); 
+  line-height: 1.2; 
+  margin-bottom: 20px;font-weight: bold; 
+}
 
   .program-card {
     transition: transform 0.3s, box-shadow 0.3s;
@@ -30,31 +152,13 @@
   .program-description {
     color: #555;
   }
-/* navbar */
-.custom-navbar {
-    background-color: #D97E30 ; 
-    padding-bottom: 0 !important; 
-    position: sticky;
-}
-
-header.py-3.mb-4.border-bottom {
-    padding-top: 30px;
-    background-color: #F2C94C ;
-    
-}
-.header-title{
-    color: white;
-}
-
-.custom-navbar .nav-link:hover {
-    color: #6a6968 !important; 
-}
 
 /*  */
+
 /* Program Section Container */
 .program-section {
-    padding: 90px;
-    background-color: #ff6f61;
+    padding: 100px;
+    background-color: #82D3A2;
 }
 
 /* Program Row */
@@ -98,7 +202,7 @@ header.py-3.mb-4.border-bottom {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #F3CA4D;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -119,17 +223,6 @@ header.py-3.mb-4.border-bottom {
         margin-bottom: 20px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

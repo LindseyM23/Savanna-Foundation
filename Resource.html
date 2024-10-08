@@ -5,38 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resources - Savanna Junior Foundation</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-  <link rel="stylesheet" href="resource.css">
+  <link rel="stylesheet" href="./styles/resource.css">
 </head>
 <body>
 
 <!-- NavBar -->
-<nav class="py-2 bg-body-tertiary border-bottom custom-navbar">
-    <div class="container d-flex flex-wrap">
-        <ul class="nav me-auto">
-            <li class="nav-item"><a href="index.html" class="nav-link link-body-emphasis px-2 active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="/AboutUs.html" class="nav-link link-body-emphasis px-2">About</a></li>
-            <li class="nav-item"><a href="#programs" class="nav-link link-body-emphasis px-2">Programs</a></li>
-            <li class="nav-item"><a href="volunteer.html" class="nav-link link-body-emphasis px-2">Volunteer</a></li>
-            <li class="nav-item"><a href="events.html" class="nav-link link-body-emphasis px-2">Events</a></li>
-        </ul>
-        <ul class="nav">
-            <li class="nav-item"><a href="#donate" class="nav-link link-body-emphasis px-2">Donate</a></li>
-            <li class="nav-item"><a href="/Volunteer.html" class="nav-link link-body-emphasis px-2">Become a Volunteer</a></li>
-        </ul>
-    </div>
-</nav>
+<nav class="navbar navbar-expand-lg custom-navbar " style="background-color: #F2C94C;">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <img src="./images/logo.png" class="img-fluid custom-logo" alt="Savanna Junior Foundation Logo" />
+    
+    <!-- Brand Name -->
+    <a class="navbar-brand" href="#" style="color: white;">Savanna Junior Foundation</a>
 
-<header class="py-3 mb-4 border-bottom">
-  <div class="container d-flex flex-wrap justify-content-center">
-      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-          <img src="./images/logo.png" width="200" alt="">
-          <div class="fs-1 header-title">Savanna Junior Foundation</div>
-      </a>
+    <!-- Toggler button for mobile view -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/index.html" style="color: white;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AboutUs.html" style="color: white;">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Programs.html" style="color: white;">Programs</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="Resource.html" style="color: white;">Resources</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="Volunteer.html" style="color: white;">Become a Volunteer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="EventCalender.html" style="color: white;">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Donation.html" style="color: white;">Donate</a>
+        </li>
+      </ul>
+    </div>
   </div>
-</header>
+</nav>
+<!--  -->
 
 
   <!-- Resources Section -->
@@ -45,21 +68,21 @@
     <div class="resources-container">
       <!-- Donor Guide -->
       <div class="resource-card">
-        <img src="images/donor-guide.jpg" alt="Donor Guide">
+        <img src="images/donor-img.png" alt="Donor Guide">
         <h3>Donor Guide</h3>
         <p>Learn how your donations make a significant impact on the lives of African children. Discover how you can further get involved and help grow our initiatives.</p>
         <a href="#" class="cta-btn">Download Guide</a>
       </div>
       <!-- Education Material -->
       <div class="resource-card">
-        <img src="images/education-material.jpg" alt="Education Material">
+        <img src="images/edu-img.png" alt="Education Material">
         <h3>Education Material</h3>
         <p>Explore educational materials, lesson plans, and other resources that we provide to underprivileged communities. Join us in creating a brighter future for Africa’s children.</p>
         <a href="#" class="cta-btn">Access Material</a>
       </div>
       <!-- Healthcare Support -->
       <div class="resource-card">
-        <img src="images/healthcare-support.jpg" alt="Healthcare Support">
+        <img src="images/resc-img.png" alt="Healthcare Support">
         <h3>Healthcare Support</h3>
         <p>Find out more about our healthcare initiatives and learn how we’re improving the health and well-being of children in remote and underserved areas.</p>
         <a href="#" class="cta-btn">Learn More</a>
@@ -90,52 +113,57 @@
   <!-- Testimonial Section -->
   <section class="testimonials-section">
     <h2>What Our Donors and Volunteers Say</h2>
-    <div class="testimonials-container">
-
+    <div class="slider-wrapper">
+      <div class="slider">
+        <div class="testimonial">
+          <img src="images/image2.jpg" alt="Testimonial 1">
+          <p>"Working with the Savanna Junior Foundation has been a life-changing experience. It’s inspiring to see how donations directly benefit the communities." – John D.</p>
+        </div>
   
-
-
-  <!-- Testimonial Section -->
-<section class="testimonials-section">
-  <h2>What Our Donors and Volunteers Say</h2>
-  <div class="slider-wrapper">
-    <div class="slider">
-
-      <div class="testimonial">
-        <img src="images/testimonial1.jpg" alt="Testimonial 1">
-        <p>"Working with the Savanna Junior Foundation has been a life-changing experience. It’s inspiring to see how donations directly benefit the communities." – John D.</p>
-
- <!-- Partners & Sponsors Section (New Section Before Footer) -->
-<section class="partners-sponsors-section text-center py-5 bg-light">
-  <div class="container">
-    <h2 class="mb-4">Our Partners & Sponsors</h2>
-    <div class="row">
-      <div class="col-md-3">
-        <img src="images/partner1.png" alt="Partner 1" class="img-fluid mb-3">
-
+        <div class="testimonial">
+          <img src="images/image4.jpg" alt="Testimonial 2">
+          <p>"The healthcare initiatives are truly remarkable. It’s amazing how we are able to bring life-saving resources to areas that need them the most." – Sarah K.</p>
+        </div>
       </div>
-      <div class="col-md-3">
-        <img src="images/partner2.png" alt="Partner 2" class="img-fluid mb-3">
+  
+      <!-- Slider Navigation -->
+      <div class="slider-nav">
+        <button id="prevBtn">&lt;</button>
+        <button id="nextBtn">&gt;</button>
       </div>
-
     </div>
+  
+    <!-- Partners & Sponsors Section (New Section Before Footer) -->
+    <section class="partners-sponsors-section text-center py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Our Partners & Sponsors</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="images/team2.png" alt="Partner 1" class="img-fluid mb-3">
+          </div>
+          <div class="col-md-3">
+            <img src="images/team4.png" alt="Partner 2" class="img-fluid mb-3">
+          </div>
+          <div class="col-md-3">
+            <img src="images/team1.png" alt="Partner 3" class="img-fluid mb-3">
+          </div>
+          <div class="col-md-3">
+            <img src="images/team3.png" alt="Partner 4" class="img-fluid mb-3">
+          </div>
+        </div>
+        <p class="mt-4">We are grateful for the support of our partners and sponsors who help us make a lasting impact.</p>
+      </div>
+    </section>
   </section>
-
-      <div class="testimonial">
-        <img src="images/testimonial2.jpg" alt="Testimonial 2">
-        <p>"The healthcare initiatives are truly remarkable. It’s amazing how we are able to bring life-saving resources to areas that need them the most." – Sarah K.</p>
-
-      <div class="col-md-3">
-        <img src="images/partner3.png" alt="Partner 3" class="img-fluid mb-3">
-
-      </div>
-      <div class="col-md-3">
-        <img src="images/partner4.png" alt="Partner 4" class="img-fluid mb-3">
+  <section class="testimonials-section">
+    
+      <!-- Slider Navigation -->
+      <div class="slider-nav">
+        <button id="prevBtn">&lt;</button>
+        <button id="nextBtn">&gt;</button>
       </div>
     </div>
-    <p class="mt-4">We are grateful for the support of our partners and sponsors who help us make a lasting impact.</p>
-  </div>
-</section>
+  
 
 
 
@@ -248,7 +276,10 @@
         updateCount(); // Start the counting effect
       });
     });
+
+
+
   </script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
