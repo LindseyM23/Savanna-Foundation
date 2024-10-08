@@ -212,3 +212,22 @@ footer ul li {
     font-size: 24px;
     color: white;
   }
+
+   /* Footer bottom */
+   .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    footer .col {
+        margin-bottom: 20px;
+    }
+  }  
+  /*  */
