@@ -1,102 +1,42 @@
-/* nav bar */
 .custom-navbar {
-    
-    padding: 10px 20px;
-    max-width: 1800px; 
-    margin: auto; 
-    margin-top: 0px;
-  }
-  
-  .custom-logo {
-    max-width: 200px; 
-    width: 100%; 
-    height: auto; 
-    border-radius: 10px; 
-    margin: 10px; 
-  }
-  
-  .navbar-brand {
-    font-size: 50px; 
-    font-weight: bold; 
-  
-  }
-  .navbar-brand {
-    font-size: 40px; 
-    font-weight: bold; 
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 1200px) {
-    .navbar-brand {
-        font-size: 90px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .navbar-brand {
-        font-size: 60px; 
-    }
-  }
-  
-  
-  .nav-link {
-    font-size: 17px; 
-    padding: 10px 15px; 
-  }
-  
-  .nav-link:hover {
-    text-decoration: underline; 
-  }
-  
-  
-  .nav-link.active {
-    font-weight: bold; 
-    text-decoration: underline; 
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 1200px) {
-    .custom-navbar {
-        padding: 10px; 
-    }
-  
-    .navbar-brand {
-        font-size: 1.5rem; 
-    }
-  
-    .nav-link {
-        font-size: 1.1rem; 
-    }
-  }
-  
-  @media (max-width: 992px) {
+    padding: 5px 0; /* Reduce padding to make navbar smaller */
+    width: 100%; /* Full width */
+    margin: 0; /* Remove any margin */
+}
+
+.custom-logo {
+    max-width: 120px; /* Reduce the size of the logo */
+    width: 100%;
+    height: auto;
+    margin: 5px 10px; /* Adjust margin for smaller logo */
+}
+
+.nav-link {
+    font-size: 18px; /* Reduce font size for the links */
+    padding: 8px 12px; /* Adjust padding */
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.navbar-collapse {
+    justify-content: flex-end; /* Move nav links to the right */
+}
+
+@media (max-width: 768px) {
     .custom-logo {
-        max-width: 120px;
+        max-width: 100px; /* Adjust logo size for smaller screens */
     }
-  
+
     .nav-link {
-        padding: 8px 10px; 
+        font-size: 16px; /* Adjust link size for mobile */
     }
-  }
-  
-  @media (max-width: 768px) {
-    .navbar-brand {
-        font-size: 1.25rem; 
-    }
-  
-    .nav-link {
-        font-size: 1rem; 
-    }
-  
-    .nav-link {
-        padding: 6px 8px; 
-    }
-  
-   
+
     .custom-navbar {
-        padding: 5px; 
+        padding: 5px;
     }
-  }
+}
   
   /*  */
     
