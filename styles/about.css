@@ -1,432 +1,386 @@
-/* nav bar */
+/* Custom Styles */
 .custom-navbar {
-    padding: 10px 20px;
-    max-width: 1800px; 
-    margin: auto; 
-    margin-top: 0px;
-  }
-  
-  .custom-logo {
-    max-width: 200px; 
-    width: 100%; 
-    height: auto; 
-    border-radius: 10px; 
-    margin: 10px; 
-  }
-  
-  .navbar-brand {
-    font-size: 50px; 
-    font-weight: bold; 
-  
-  }
-  .navbar-brand {
-    font-size: 40px; 
-    font-weight: bold; 
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 1200px) {
-    .navbar-brand {
-        font-size: 90px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .navbar-brand {
-        font-size: 60px; 
-    }
-  }
-  
-  
-  .nav-link {
-    font-size: 17px; 
-    padding: 10px 15px; 
-  }
-  
-  .nav-link:hover {
-    text-decoration: underline; 
-  }
-  
-  
-  .nav-link.active {
-    font-weight: bold; 
-    text-decoration: underline; 
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 1200px) {
-    .custom-navbar {
-        padding: 10px; 
-    }
-  
-    .navbar-brand {
-        font-size: 1.5rem; 
-    }
-  
-    .nav-link {
-        font-size: 1.1rem; 
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .custom-logo {
-        max-width: 120px;
-    }
-  
-    .nav-link {
-        padding: 8px 10px; 
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .navbar-brand {
-        font-size: 1.25rem; 
-    }
-  
-    .nav-link {
-        font-size: 1rem; 
-    }
-  
-    .nav-link {
-        padding: 6px 8px; 
-    }
-  
-   
-    .custom-navbar {
-        padding: 5px; 
-    }
-  }
-  
-  /*  */
-  /* about content */
-  body {
-    font-family: 'Arial', sans-serif; /* Use a clean font */
-    color: #333; /* General text color */
-    background-color: #f9f9f9; /* Light background for the entire body */
-  }
-  
-  /* About Us Section */
-  .about-us-section {
-    background-color: #0C9396; /* Light blue background */
-  }
-  
-  .about-us-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 50px;
-  }
-  
-  .about-us-image {
-    flex: 1;
-    position: relative;
-    
-  }
-  
-  .about-us-image img {
-    width: 100%;
-    height: 100%; /* Adjusted height for better aspect ratio */
-    object-fit: cover;
-    border-radius: 10px; /* Rounded corners */
-  }
-  
-  .about-us-content {
-    flex: 1;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque background */
-    padding: 20px;
-    position: relative;
-    top: -30px; /* Reduced overlap */
-    margin-left: -250px; /* Adjusted for better visual balance */
-    z-index: 1;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  }
-  
-  .about-us-content h2 {
-    font-size: 2.5rem; /* Increased heading size */
-    color: #0C9396; /* Primary color */
-    margin-bottom: 10px;
-  }
-  
-  .about-us-content p {
-    font-size: 1.2rem;
-    line-height: 1.6; /* Improved line spacing */
-  }
-  
-  /* Responsive Design for About Us */
-  @media (max-width: 768px) {
-    .about-us-container {
-        flex-direction: column;
-        padding: 20px;
-    }
-  
-    .about-us-content {
-        top: 0;
-        margin-left: 0;
-        margin-top: -20px;
-    }
-  
-    .about-us-image img {
-        height: 300px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .about-us-content h2 {
-        font-size: 1.8rem; /* Adjusted heading for small screens */
-    }
-  
-    .about-us-content p {
-        font-size: 1rem;
-    }
-  }
-  
-  /* Mission, Vision, and Purpose Section */
-  .mission-vision-purpose {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    object-fit: cover;
-    padding: 50px;
-    background-color: #fff; /* White background */
-  }
-  
-  .section {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    justify-content: space-between;
-  }
-  
-  .section .text {
-    flex: 1;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .section .text h2 {
-    font-size: 2rem;
-    color: #0C9396; /* Primary color */
-    margin-bottom: 10px;
-  }
-  
-  .section .text p {
-    font-size: 1.2rem;
-    line-height: 1.5; /* Improved readability */
-  }
-  
-  .section .image {
-    flex: 1;
-  }
-  
-  .section .image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  /* Responsive Design for Mission, Vision, and Purpose */
-  @media (max-width: 768px) {
-    .section {
-        flex-direction: column;
-        text-align: center;
-    }
-  
-    .section .image, .section .text {
-        order: unset;
-    }
-  
-    .section .image img {
-        height: 300px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .section .text h2 {
-        font-size: 1.5rem;
-    }
-  
-    .section .text p {
-        font-size: 1rem;
-    }
-  }
-  
-  /* Principles Section */
-  .principles {
-    text-align: left;
-    margin: 50px auto;
-    padding: 0 20px;
-    max-width: 800px;
-  }
-  
-  .principles h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color:#0C9396/* Primary color */
-  }
-  
-  .principle {
-    margin-bottom: 30px; /* Space between principles */
-    padding: 20px;
-    border: 1px solid #0C9396; /* Add border to principles */
-    border-radius: 10px; /* Rounded corners */
-    background-color: rgba(230, 242, 255, 0.5); /* Light background for better visibility */
-  }
-  
-  .principle h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .principle p {
-    font-size: 1rem;
-  }
-  
-  /* Responsive Design for Principles */
-  @media (max-width: 768px) {
-    .principles h2 {
-        font-size: 1.8rem;
-    }
-  
-    .principle h3 {
-        font-size: 1.3rem;
-    }
-  
-    .principle p {
-        font-size: 0.95rem;
-    }
-  }
-  
-  /* Meet Our Team Section */
-  .my-team {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #D97430
-  }
-  
-  .my-team h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: white /* Primary color */
-  }
-  
-  .team-member {
-    display: inline-block;
-    width: 250px;
-    margin: 20px;
-    vertical-align: top;
-    text-align: center;
-    background-color: white;
-  }
-  
-  .team-member img {
-    width: 100%;
-    height: auto;
-    /* border-radius: 50%; */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .team-member p {
-    margin-top: 10px;
-    font-size: 1rem;
-  }
-  
-  /* Responsive Design for Meet Our Team */
-  @media (max-width: 768px) {
-    .team-member {
-        width: 45%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .team-member {
-        width: 90%;
-        margin: 10px auto;
-    }
-  }
-  
-  /*  */
+  padding: 10px 0;
+  width: 100%;
+  margin: 0;
+}
 
-  /* footer */
-  footer {
-    background-color: #F3CA4D;
-    color: white;
-    padding: 50px 0;
+.custom-logo {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+}
+
+.nav-link {
+  font-size: 18px;
+  padding: 8px 12px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .custom-logo {
+    max-width: 80px;
   }
-  
-  /* Container */
-  footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+
+  .nav-link {
+    font-size: 16px;
   }
-  
-  /* Footer columns */
-  footer .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+  .custom-navbar {
+    padding: 5px;
   }
-  
+}
+
+/* Hero section */
+.hero {
+  background-image: url('../images/inclusion.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 13px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 50vh;
+    font-size: 2rem;
+  }
+}
+
+/* About Content */
+body {
+  font-family: 'Arial', sans-serif; /* Use a clean font */
+  color: #333; /* General text color */
+  background-color: #f9f9f9; /* Light background for the entire body */
+}
+
+/* About Us Section */
+.about-us-section {
+  background-color: #0C9396; /* Light blue background */
+}
+
+.about-us-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 50px;
+}
+
+.about-us-image {
+  flex: 1;
+  position: relative;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: 100%; /* Adjusted height for better aspect ratio */
+  object-fit: cover;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.about-us-content {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque background */
+  padding: 20px;
+  position: relative;
+  top: -30px; /* Reduced overlap */
+  margin-left: -250px; /* Adjusted for better visual balance */
+  z-index: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.about-us-content h2 {
+  font-size: 2.5rem; /* Increased heading size */
+  color: #0C9396; /* Primary color */
+  margin-bottom: 10px;
+}
+
+.about-us-content p {
+  font-size: 1.2rem;
+  line-height: 1.6; /* Improved line spacing */
+}
+
+/* Responsive Design for About Us */
+@media (max-width: 768px) {
+  .about-us-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .about-us-content {
+      top: 0;
+      margin-left: 0;
+      margin-top: -20px;
+  }
+
+  .about-us-image img {
+      height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-content h2 {
+      font-size: 1.8rem; /* Adjusted heading for small screens */
+  }
+
+  .about-us-content p {
+      font-size: 1rem;
+  }
+}
+
+/* Mission, Vision, and Purpose Section */
+.mission-vision-purpose {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  object-fit: cover;
+  padding: 50px;
+  background-color: #fff; /* White background */
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.section .text {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section .text h2 {
+  font-size: 2rem;
+  color: #0C9396; /* Primary color */
+  margin-bottom: 10px;
+}
+
+.section .text p {
+  font-size: 1.2rem;
+  line-height: 1.5; /* Improved readability */
+}
+
+.section .image {
+  flex: 1;
+}
+
+.section .image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Responsive Design for Mission, Vision, and Purpose */
+@media (max-width: 768px) {
+  .section {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .section .image,
+  .section .text {
+      order: unset;
+  }
+
+  .section .image img {
+      height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section .text h2 {
+      font-size: 1.5rem;
+  }
+
+  .section .text p {
+      font-size: 1rem;
+  }
+}
+
+/* Principles Section */
+.principles {
+  text-align: left;
+  margin: 50px auto;
+  padding: 0 20px;
+  max-width: 800px;
+}
+
+.principles h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0C9396; /* Primary color */
+}
+
+.principle {
+  margin-bottom: 30px; /* Space between principles */
+  padding: 20px;
+  border: 1px solid #0C9396; /* Add border to principles */
+  border-radius: 10px; /* Rounded corners */
+  background-color: rgba(230, 242, 255, 0.5); /* Light background for better visibility */
+}
+
+.principle h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.principle p {
+  font-size: 1rem;
+}
+
+/* Responsive Design for Principles */
+@media (max-width: 768px) {
+  .principles h2 {
+      font-size: 1.8rem;
+  }
+
+  .principle h3 {
+      font-size: 1.3rem;
+  }
+
+  .principle p {
+      font-size: 0.95rem;
+  }
+}
+
+/* Meet Our Team Section */
+.my-team {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #D97430;
+}
+
+.my-team h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: white; /* Primary color */
+}
+
+.team-member {
+  display: inline-block;
+  width: 250px;
+  margin: 20px;
+  vertical-align: top;
+  text-align: center;
+  background-color: white;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 50%; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Responsive Design for Meet Our Team */
+@media (max-width: 768px) {
+  .team-member {
+      width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-member {
+      width: 90%;
+      margin: 10px auto;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #F3CA4D;
+  color: white;
+  padding: 50px 0;
+}
+
+/* Container */
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Footer columns */
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  flex: 1;
+  margin: 10px;
+}
+
+footer h5 {
+  margin-bottom: 15px;
+}
+
+/* Links */
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons i {
+  font-size: 24px;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
   footer .col {
-    flex: 1;
-    margin: 10px;
+      flex: 100%;
+      margin-bottom: 20px;
   }
-  
-  footer h5 {
-    margin-bottom: 15px;
-  }
-  
-  /* Links */
-  footer a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  footer ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  footer ul li {
-    margin-bottom: 10px;
-  }
-  
-  /* Social icons */
-  .social-links {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-  
-  .social-links li {
-    margin: 0 10px;
-  }
-  
-  .social-links a {
-    font-size: 24px;
-    color: white;
-  }
-  
-  /* Footer bottom */
-  .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    footer .row {
-        flex-direction: column;
-        text-align: center;
-    }
-  
-    footer .col {
-        margin-bottom: 20px;
-    }
-  } 
+}
+
   /*  */
     

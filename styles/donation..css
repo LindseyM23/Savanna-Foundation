@@ -1,101 +1,43 @@
-/* nav bar */
+/* Custom Styles */
 .custom-navbar {
-    padding: 10px 20px;
-    max-width: 1800px; 
-    margin: auto; 
-    margin-top: 0px;
-  }
-  
+  padding: 10px 0;
+  width: 100%;
+  margin: 0;
+}
+
+.custom-logo {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+}
+
+.nav-link {
+  font-size: 18px;
+  padding: 8px 12px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
   .custom-logo {
-    max-width: 200px; 
-    width: 100%; 
-    height: auto; 
-    border-radius: 10px; 
-    margin: 10px; 
+    max-width: 80px;
   }
-  
-  .navbar-brand {
-    font-size: 50px; 
-    font-weight: bold; 
-  
-  }
-  .navbar-brand {
-    font-size: 40px; 
-    font-weight: bold; 
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 1200px) {
-    .navbar-brand {
-        font-size: 90px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .navbar-brand {
-        font-size: 60px; 
-    }
-  }
-  
-  
+
   .nav-link {
-    font-size: 17px; 
-    padding: 10px 15px; 
+    font-size: 16px;
   }
-  
-  .nav-link:hover {
-    text-decoration: underline; 
+
+  .custom-navbar {
+    padding: 5px;
   }
-  
-  
-  .nav-link.active {
-    font-weight: bold; 
-    text-decoration: underline; 
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 1200px) {
-    .custom-navbar {
-        padding: 10px; 
-    }
-  
-    .navbar-brand {
-        font-size: 1.5rem; 
-    }
-  
-    .nav-link {
-        font-size: 1.1rem; 
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .custom-logo {
-        max-width: 120px;
-    }
-  
-    .nav-link {
-        padding: 8px 10px; 
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .navbar-brand {
-        font-size: 1.25rem; 
-    }
-  
-    .nav-link {
-        font-size: 1rem; 
-    }
-  
-    .nav-link {
-        padding: 6px 8px; 
-    }
-  
-   
-    .custom-navbar {
-        padding: 5px; 
-    }
-  }
+}
+
   
   /*  */
   
