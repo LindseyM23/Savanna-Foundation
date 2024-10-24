@@ -1,203 +1,157 @@
-/* nav bar */
 .custom-navbar {
-  padding: 10px 20px;
-  max-width: 1800px; 
-  margin: auto; 
-  margin-top: 0px;
+    padding: 5px 0; /* Reduce padding to make navbar smaller */
+    width: 100%; /* Full width */
+    margin: 0; /* Remove any margin */
 }
 
 .custom-logo {
-  max-width: 200px; 
-  width: 100%; 
-  height: auto; 
-  border-radius: 10px; 
-  margin: 10px; 
+    max-width: 120px; /* Reduce the size of the logo */
+    width: 100%;
+    height: auto;
+    margin: 5px 10px; /* Adjust margin for smaller logo */
 }
-
-.navbar-brand {
-  font-size: 50px; 
-  font-weight: bold; 
-
-}
-.navbar-brand {
-  font-size: 40px; 
-  font-weight: bold; 
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 1200px) {
-  .navbar-brand {
-      font-size: 90px;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar-brand {
-      font-size: 60px; 
-  }
-}
-
 
 .nav-link {
-  font-size: 17px; 
-  padding: 10px 15px; 
+    font-size: 18px; /* Reduce font size for the links */
+    padding: 8px 12px; /* Adjust padding */
 }
 
 .nav-link:hover {
-  text-decoration: underline; 
+    text-decoration: underline;
 }
 
-
-.nav-link.active {
-  font-weight: bold; 
-  text-decoration: underline; 
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 1200px) {
-  .custom-navbar {
-      padding: 10px; 
-  }
-
-  .navbar-brand {
-      font-size: 1,5rem; 
-
-  }
-
-  .nav-link {
-      font-size: 1.1rem; 
-  }
-}
-
-@media (max-width: 992px) {
-  .custom-logo {
-      max-width: 120px;
-  }
-
-  .nav-link {
-      padding: 8px 10px; 
-  }
+.navbar-collapse {
+    justify-content: flex-end; /* Move nav links to the right */
 }
 
 @media (max-width: 768px) {
-  .navbar-brand {
-      font-size: 1.25rem; 
-  }
+    .custom-logo {
+        max-width: 100px; /* Adjust logo size for smaller screens */
+    }
 
-  .nav-link {
-      font-size: 1rem; 
-  }
+    .nav-link {
+        font-size: 16px; /* Adjust link size for mobile */
+    }
 
-  .nav-link {
-      padding: 6px 8px; 
-  }
-
- 
-  .custom-navbar {
-      padding: 5px; 
-  }
+    .custom-navbar {
+        padding: 5px;
+    }
 }
 
-/*  */
-  
 
-
-  /* hero section */
-  .hero-section {
-    background-image: url('./images/hero-image.png');
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: scroll; 
-    width: 100vw; 
-    height: 100vh; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    color: white;
-    text-align: center;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
+/* Hero Section */
+.hero-section {
+  background-image: url('../images/hero-image.png');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  color: white;
 }
 
 .display-4 {
-  font-size: 90px; 
-  font-weight: bold; 
-  color: #ffffff; 
-  text-shadow: 2px 13px 4px rgba(0, 0, 0, 0.5); 
-  line-height: 1.2; 
-  margin-bottom: 20px;font-weight: bold; 
-  
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
 }
 
-.hero-section .lead  {
-  font-size: 20px; 
-  background-color:  #f4cb4e; 
-  padding: 10px; 
-  border-radius: 10px; 
-  display: inline-block; 
-
+.hero-section .lead {
+  font-size: 1.5rem;
+  background-color: #f4cb4e;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 .btn-custom {
-  background-color: #D96E30; 
-  color: white; 
-  border-radius: 10px; 
-  padding: 20px;
-  font-size: 20px;
+  background-color: #D96E30;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 1.25rem;
 }
 
 .btn-custom:hover {
-  background-color: #e6b832; 
+  background-color: #e6b832;
 }
 
-/* Media query for tablets and smaller screens */
+/* Media Queries for Navbar and Hero Section Responsiveness */
+@media (max-width: 992px) {
+  .custom-logo {
+    max-width: 100px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    padding: 8px 10px;
+  }
+
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section .lead {
+    font-size: 1.25rem;
+  }
+}
+
 @media (max-width: 768px) {
-    .hero-section {
-        min-height: 70vh; 
-        background-size: cover; 
-    }
+  .custom-logo {
+    max-width: 80px;
+  }
 
-    .hero-section h1.display-4 {
-        font-size: 2.3rem; 
-    }
+  .nav-link {
+    font-size: 18px;
+  }
 
-    .hero-section .lead {
-        font-size: 20px; 
-    }
+  .display-4 {
+    font-size: 2rem;
+  }
 
-    .btn-custom {
-        font-size: 1rem; 
-    }
+  .hero-section .lead {
+    font-size: 1rem;
+  }
+
+  .btn-custom {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
 }
 
-/* Media query for phones */
 @media (max-width: 480px) {
-    .hero-section {
-        min-height: 60vh; 
-        background-size: cover; 
-    }
+  .custom-logo {
+    max-width: 60px;
+  }
 
-    .hero-section h1.display-4 {
-        font-size: 2rem; 
-    }
+  .nav-link {
+    font-size: 16px;
+  }
 
-    .hero-section .lead {
-        font-size: 50px; 
-        padding: 8px; /* Smaller padding for lead text on phones */
-    }
+  .display-4 {
+    font-size: 1.75rem;
+  }
 
-    .btn-custom {
-        font-size: 0.9rem; /* Further reduce button font size */
-        padding: 10px 20px; /* Adjust button padding */
-    }
+  .hero-section .lead {
+    font-size: 0.875rem;
+  }
 
-    .ms-3 {
-        margin-left: 0; /* Remove margin-left to avoid overcrowding */
-        margin-top: 10px; /* Add margin on top for better spacing on small screens */
-        display: block; /* Stack buttons vertically */
-    }
+  .btn-custom {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .ms-3 {
+    margin-left: 0;
+    margin-top: 10px;
+    display: block;
+  }
 }
-  /*  */
+
 
   /* core values */
   .container {
