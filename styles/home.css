@@ -1,3 +1,40 @@
+/* fonts */
+@font-face{
+  font-family: 'Tango Sans';
+  src: url('../Fonts/tangosans/TangoSans.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Tango SansB';
+  src: url('../fonts/tangosans/TangoSans_Bold.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Tango SansI';
+  src: url('../fonts/TangoSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'Tango SansBI';
+  src: url('../fonts/TangoSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Autography';
+  src: url('../Fonts/tangosans/Autography.otf');
+}
+/*  */
+
 .custom-navbar {
     padding: 5px 0; /* Reduce padding to make navbar smaller */
     width: 100%; /* Full width */
@@ -14,10 +51,13 @@
 .nav-link {
     font-size: 18px; /* Reduce font size for the links */
     padding: 8px 12px; /* Adjust padding */
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+
 }
 
 .nav-link:hover {
-    text-decoration: underline;
+    color: #3195d3;
 }
 
 .navbar-collapse {
@@ -49,20 +89,24 @@
 }
 
 .display-4 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: bold;
   color: #ffffff;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
+  font-family: 'Tango SansB',sans-serif;
 }
 
 .hero-section .lead {
-  font-size: 1.5rem;
-  background-color: #f4cb4e;
+  font-size: 20px;
+  background-color: #D96F31;
+  /* background-color: #D98730; */
   padding: 10px;
-  color: white;
+  color: #1B1B1B;
   border-radius: 10px;
   display: inline-block;
+  font-family: 'Montserrat';
+  font-weight: light;
 }
 
 .btn-custom {
@@ -70,11 +114,13 @@
   color: white;
   border-radius: 10px;
   padding: 15px 30px;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  font-family: 'Montserrat';
+  font-weight:bold ;
 }
 
 .btn-custom:hover {
-  background-color: #D97430;
+  background-color: #55ABE2 ;
 }
 
 /* Media Queries for Navbar and Hero Section Responsiveness */
@@ -176,6 +222,8 @@
     margin-bottom: 20px; /* Add space below the heading */
     text-align: center;
     margin-top: 30px;
+    font-family: 'Montserrat';
+    font-weight: bold;
   }
   
   .row {
@@ -210,12 +258,15 @@
     margin-bottom: 10px; /* Space between heading and paragraph */
     font-weight: bold; /* Bold text */
     font-size: 30px;
+    font-family: 'Montserrat';
   }
   
   p {
     color: #333; /* Dark gray for readability */
     font-size: 20px;
     line-height: 1.5; /* Improve readability */
+    font-family: 'Montserrat';
+    font-weight: light;
   }
   
   /* Media Query for Smaller Screens */
@@ -235,8 +286,9 @@
 
   /* impact section */
   .impact {
-    background-image: linear-gradient(to right top, #d97430, #e28a33, #ea9f39, #f0b542, #f4cb4e);
-  
+    /* background-image: linear-gradient(to right top, #d97430, #e28a33, #ea9f39, #f0b542, #f4cb4e); */
+    background: rgb(217,111,49);
+    background: linear-gradient(326deg, rgba(217,111,49,1) 35%, rgba(217,135,48,1) 69%);
     color: white; /* Text color */
     padding: 40px 0; /* Vertical padding */
   }
@@ -251,6 +303,8 @@
     font-size: 2.5rem; /* Font size for the heading */
     margin-bottom: 20px; /* Space below the heading */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+    font-family: 'Montserrat';
+    color: black;
   }
   
   .impact-description {
@@ -285,7 +339,7 @@
   .counter {
     font-size: 3rem; /* Font size for the counter */
     margin: 0; /* Reset margin */
-    color: #D97430; /* Counter color */
+    color: black; /* Counter color */
     font-weight: bold; /* Bold counter */
   }
   
@@ -300,7 +354,10 @@
 
   /* sucess stories */
   .success-stories {
-    background-color: #F8F9FA; /* Light background color */
+  background-image: url(../SJFI/Graphics.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
     padding: 40px 0; /* Vertical padding */
   }
   
@@ -316,8 +373,10 @@
   }
   
   .success-heading {
-    font-size: 2.5rem; /* Font size for the heading */
+    font-size: 8.5rem; /* Font size for the heading */
     text-align: center;
+    font-family: 'Autography';
+
   }
   
   .success-description {
